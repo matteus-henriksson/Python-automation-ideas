@@ -36,6 +36,7 @@ class Handler(FileSystemEventHandler):
             print("Watchdog received created event - % s." % event.src_path)
         elif event.event_type == 'modified':
             # Event is modified, you can process it now
+            print("Test, does it enter this if??")
             print("Watchdog received modified event - % s." % event.src_path)
               
   
